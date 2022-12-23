@@ -14,10 +14,10 @@
                 <h2>EESUOLA</h2>
                 <ul id="myUl">
                     <i class="fas fa-times" id="faTimes"></i>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="#project">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="myLi"><a href="#">HOME</a></li>
+                    <li class="myLi"><a href="#about">ABOUT</a></li>
+                    <li class="myLi"><a href="#project">PROJECTS</a></li>
+                    <li class="myLi"><a href="#contact">CONTACT</a></li>
                 </ul>
                 <i class="fas fa-bars" id="faBars"></i>
             </nav>
@@ -35,7 +35,7 @@
     </main>
 
     <article>
-        <div class="aboutMe">
+        <div class="aboutMe" id="about">
             <h2>About Me</h2>
             <p>My name is Eesuola Ayotunde T , I like using my code skills to solve businesses and
                 individual problems . I have extensive experience working both alone and as part of the
@@ -67,7 +67,8 @@
             <div class="eachProject">
                 <h3>Higher Favour church, Abuja .</h3>
                 <p>A website for higher favour church international. This web app is made
-                    by using HTML, CSS, Javascript and PHP for backend . 
+                    by using HTML, CSS, Javascript and PHP for backend . Javascript interception observer
+                    with CSS animation . 
                 </p>
                 <div class="showCodeUrl">
                     <a href="https://glittery-dango-80877a.netlify.app/">VIEW</a>
@@ -97,13 +98,13 @@
                 </div>
             </div>
             <div class="eachProject">
-                <h3>Higher Favour church</h3>
-                <p>A website for higher favour church international. This web app is made
-                    by using HTML, CSS, Javascript and PHP for backend . 
+                <h3>Crptocurrencies Price Track</h3>
+                <p>
+                    This web app allows you to see latest cryptocurrencies prcie actions. 
                 </p>
                 <div class="showCodeUrl">
-                    <a href="#">VIEW</a>
-                    <a href="#">CODE</a>
+                    <a href="https://current-crypto-price.herokuapp.com/">VIEW</a>
+                    <a href="https://github.com/E-tim/crypto_current_price">CODE</a>
                 </div>
             </div>
         </div>
@@ -113,7 +114,7 @@
         <p>CONTACT ME</p>
         <h3>Thanks for reaching out to me</h3>
         <div class="subContact">
-            <form action="submit.php" method="post">
+            <form action="http://localhost/dapp/submit.php" method="post">
                 <div>
                     <input type="text" name="name" placeholder="Name" required/>
                 </div>
@@ -129,13 +130,16 @@
                 <p>eesuolaayot@gmail.com</p>
                 <a href="https://drive.google.com/file/d/1eTipB6LB_oEHHyVBev14f-OajbbqASEz/view?usp=drivesdk" class="myCv">Download my CV</a>
                 <div class="subSocial">
-                    <a href="">Github</a>
-                    <a href="">Twitter</a>
-                    <a href="">Linkdin</a>
+                    <a href="https://github.com/E-tim">Github</a>
+                    <a href="https://twitter.com/AyotundeEesuola">Twitter</a>
+                    <a href="https://www.linkedin.com/in/eesuola-ayotunde-timothy-1182291b1/">Linkdin</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- scroll up button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <footer>
         <p>Designes and built by Eesuola Ayotunde</p>
         <p>&copycopyright 2022</p>

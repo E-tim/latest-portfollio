@@ -17,5 +17,9 @@ function myClick(e) {
 
 
 
+let observes = document.querySelectorAll('.observe')
 
-
+// observes.forEach(ob => {
+//     console.log(ob)
+// })
+console.log(observes.length)

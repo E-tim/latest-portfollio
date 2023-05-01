@@ -19,7 +19,33 @@ function myClick(e) {
 
 let observes = document.querySelectorAll('.observe')
 
-// observes.forEach(ob => {
-//     console.log(ob)
-// })
-console.log(observes.length)
+const option = {
+    threshold: .5,
+    rootMargin: '0px 0px 0px 0px'
+}
+const projectList = new IntersectionObserver( (entries, projectList)=>{
+    entries.forEach(project => {
+        if(!project.isIntersecting){
+            return;
+        } else {
+            let par = document.createComment('p')
+            
+        }
+    });
+} , option)
+
+async function inter_sect(entries, dosOpacity) {
+    for( let entry of entries) {
+        if(!entry.isIntersecting) {
+            return;
+        } else {
+            await delay(200)
+            entry.target.classList.add('eachDos-observer')
+            dosOpacity.unobserve(entry.target)
+        }
+    } 
+}
+
+
+
+
